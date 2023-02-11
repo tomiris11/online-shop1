@@ -1,0 +1,42 @@
+header{
+    padding: 25px 0;
+    .wrapper{
+        @extend %container;
+        .logo{
+            display: flex;
+            align-items: baseline;
+            .ellipse{
+                width: 8px;
+                height: 8px;
+                border-radius: 100%;
+                background-color: $orange;
+                margin-left: 5px;
+            }
+            h2{
+                text-transform: uppercase;
+                @include font(900);
+                font-size: 32px;
+            }
+        }
+        .nav-container{
+        display: flex;
+        align-items: center;
+        .nav-links{
+            a{
+                text-transform: uppercase;
+                color: $black;
+                @include font(700);
+                margin-right: 20px;
+            }
+
+        }
+        .nav-icons{
+            padding-left: 20px;
+            border-left: 1px solid $gray;
+            svg:first-child{
+                margin-right: 10px;
+            }
+        }
+        }
+    }
+}
